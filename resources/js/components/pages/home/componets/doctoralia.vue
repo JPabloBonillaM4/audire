@@ -1,6 +1,6 @@
 <template>
-    <section class="py-16 lg:py-24 bg-gradient-to-br from-base-200 to-base-100">
-        <div class="container mx-auto px-4">
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-base-200 to-base-100 overflow-x-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full overflow-hidden">
             <div class="max-w-6xl mx-auto">
                 <!-- Header -->
                 <div ref="headerRef" class="text-center mb-12 transition-all duration-700 ease-out" :class="{ 'opacity-0 translate-y-10': !isHeaderVisible, 'opacity-100 translate-y-0': isHeaderVisible }">
@@ -31,8 +31,8 @@
                     </div>
 
                     <!-- Right Side - CTA Card -->
-                    <div ref="ctaRef" class="relative transition-all duration-700 ease-out" :class="{ 'opacity-0 translate-x-10': !isCtaVisible, 'opacity-100 translate-x-0': isCtaVisible }">
-                        <div class="bg-base-100 rounded-2xl shadow-2xl p-8 lg:p-10 border-t-4 border-primary">
+                    <div ref="ctaRef" class="relative transition-all duration-700 ease-out overflow-hidden" :class="{ 'opacity-0 translate-x-10': !isCtaVisible, 'opacity-100 translate-x-0': isCtaVisible }">
+                        <div class="bg-base-100 rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-10 border-t-4 border-primary">
                             <!-- Doctoralia Logo Placeholder -->
                             <div class="flex items-center justify-center mb-6">
                                 <div class="text-2xl font-bold text-base-content/80">
@@ -42,7 +42,7 @@
 
                             <div class="space-y-6">
                                 <!-- CTA Button -->
-                                <a href="#" @click.prevent="handleBooking" class="block w-full bg-gradient-to-r from-primary to-secondary hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 text-white text-center py-4 px-6 rounded-xl font-semibold text-lg">
+                                <a @click.prevent="handleBooking" class="block w-full bg-gradient-to-r from-primary to-secondary cursor-pointer hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 text-white text-center py-4 px-6 rounded-xl font-semibold text-lg">
                                     Agenda tu cita ahora
                                 </a>
 
@@ -57,8 +57,8 @@
                         </div>
 
                         <!-- Decorative Elements -->
-                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-secondary opacity-10 rounded-full blur-2xl"></div>
-                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary opacity-10 rounded-full blur-2xl"></div>
+                        <div class="absolute -top-4 right-0 sm:-right-4 w-24 h-24 bg-secondary opacity-10 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-4 left-0 sm:-left-4 w-32 h-32 bg-primary opacity-10 rounded-full blur-2xl"></div>
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@ const isBadgesVisible = ref(false);
 let observer = null;
 
 const handleBooking = () => {
-    window.open('https://www.doctoralia.com.mx/', '_blank');
+    window.open('https://www.doctoralia.com.mx/clinicas/audire-audiologia-salud-y-bienestar-auditivo?saasonly=true&utm_id=24469&utm_source=widget-facility-24469&utm_medium=facility-big&utm_campaign=&utm_content=#highlight-calendar', '_blank');
 };
 
 onMounted(() => {

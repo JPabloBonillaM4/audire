@@ -1,6 +1,6 @@
 <template>
-    <section class="py-16 sm:py-20 lg:py-28 bg-base-100">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-16 sm:py-20 lg:py-28 bg-base-100 overflow-x-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-full overflow-hidden">
             <!-- Header -->
             <div class="max-w-4xl mx-auto text-center mb-12 lg:mb-16">
                 <h2 
@@ -20,10 +20,10 @@
             </div>
 
             <!-- Content -->
-            <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-5 gap-8">
+            <div class="max-w-7xl mx-auto w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8">
                     <!-- Locations Sidebar -->
-                    <div class="lg:col-span-2 space-y-4 my-auto">
+                    <div class="lg:col-span-2 space-y-4 my-auto w-full">
                         <LocationCard
                             v-for="(location, index) in locations"
                             :key="index"
@@ -37,10 +37,10 @@
                     <!-- Map Container -->
                     <div
                         ref="mapRef"
-                        class="lg:col-span-3 transition-all duration-700 ease-out"
+                        class="lg:col-span-3 transition-all duration-700 ease-out w-full"
                         :class="{ 'opacity-0 translate-x-10': !isMapVisible, 'opacity-100 translate-x-0': isMapVisible }"
                     >
-                        <div class="relative h-[400px] sm:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl border-4 border-base-300">
+                        <div class="relative h-[350px] sm:h-[450px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl border-4 border-base-300 w-full">
                             <!-- Map iframe -->
                             <iframe
                                 :src="currentMapUrl"

@@ -142,82 +142,67 @@ const navItems = [
     >
         <div
             v-if="isMobileMenuOpen"
-            class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-base-100 shadow-2xl z-50 lg:hidden overflow-y-auto"
+            class="fixed top-0 right-0 bottom-0 w-72 max-w-[80vw] bg-base-100 shadow-2xl z-50 lg:hidden overflow-y-auto pb-16"
         >
             <!-- Drawer Header -->
-            <div class="sticky top-0 bg-gradient-to-r from-primary to-secondary p-6 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <img src="/img/logos/logo_audire_white.png" alt="AUDIRE" class="h-10 w-auto" />
-                </div>
+            <div class="flex items-center justify-between p-4 border-b border-base-200">
+                <a href="/" class="flex items-center">
+                    <img src="/img/logos/logo_audire.png" alt="AUDIRE" class="h-8 w-auto" />
+                </a>
                 <button
                     @click="toggleMobileMenu"
-                    class="btn btn-circle btn-ghost btn-sm text-white hover:bg-white/20"
+                    class="btn btn-ghost btn-sm btn-circle"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
 
             <!-- Navigation Menu -->
-            <ul class="menu menu-vertical p-0 mt-2">
-                <li v-for="(item, index) in navItems" :key="item.label" class="border-b border-gray-100 last:border-b-0">
-                    <a
-                        :href="item.href"
-                        @click="toggleMobileMenu"
-                        :class="[
-                            'group px-6 py-4 text-base font-medium transition-all duration-300 flex items-center justify-between hover:bg-primary/5 rounded-none',
-                            currentRoute === item.name ? 'bg-primary/10 text-primary font-semibold' : 'text-gray-700'
-                        ]"
-                        :style="{ animationDelay: `${index * 50}ms` }"
-                    >
-                        <span class="flex items-center gap-3">
-                            <!-- Animated dot indicator -->
+            <nav class="px-4 py-6">
+                <ul class="space-y-1">
+                    <li v-for="(item, index) in navItems" :key="item.label">
+                        <a
+                            :href="item.href"
+                            @click="toggleMobileMenu"
+                            :class="[
+                                'flex items-center gap-4 px-4 py-3.5 rounded-xl text-base font-medium transition-all duration-200',
+                                currentRoute === item.name 
+                                    ? 'bg-primary/10 text-primary' 
+                                    : 'text-base-content hover:bg-base-200'
+                            ]"
+                        >
                             <span 
                                 :class="[
-                                    'w-2 h-2 rounded-full transition-all duration-300',
-                                    currentRoute === item.name 
-                                        ? 'bg-primary scale-100' 
-                                        : 'bg-gray-300 scale-0 group-hover:scale-100 group-hover:bg-primary'
+                                    'w-1.5 h-1.5 rounded-full transition-all duration-200',
+                                    currentRoute === item.name ? 'bg-primary' : 'bg-base-300'
                                 ]"
                             ></span>
                             {{ item.label }}
-                        </span>
-                        <!-- Arrow icon -->
-                        <svg 
-                            class="w-5 h-5 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" 
-                            :class="currentRoute === item.name ? 'text-primary' : ''"
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
             <!-- Drawer Footer -->
-            <div class="p-6 mt-4 border-t border-gray-200">
-                <div class="text-center">
-                    <p class="text-sm text-gray-500 mb-4">Síguenos en redes sociales</p>
-                    <div class="flex justify-center gap-4">
-                        <a href="#" class="btn btn-circle btn-ghost hover:bg-primary hover:text-white transition-all">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn btn-circle btn-ghost hover:bg-primary hover:text-white transition-all">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn btn-circle btn-ghost hover:bg-primary hover:text-white transition-all">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                    </div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-base-200 bg-base-100">
+                <div class="flex items-center justify-center gap-3">
+                    <a href="#" class="btn btn-ghost btn-sm btn-circle text-base-content/60 hover:text-primary">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-ghost btn-sm btn-circle text-base-content/60 hover:text-primary">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-ghost btn-sm btn-circle text-base-content/60 hover:text-primary">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

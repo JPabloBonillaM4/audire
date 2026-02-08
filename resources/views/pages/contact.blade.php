@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-Contact section
+<contact-section></contact-section>
 @endsection
