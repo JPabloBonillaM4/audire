@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-Servicios section
+<services-section></services-section>
 @endsection

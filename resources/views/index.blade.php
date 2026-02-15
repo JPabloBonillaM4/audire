@@ -5,6 +5,8 @@
     {{-- Navbar --}}
     <navbar-component></navbar-component>
     @yield('content')
+    {{-- Footer --}}
+    <footer-component></footer-component>
     {{-- Whatssapp contact --}}
     <whatsapp-contact></whatsapp-contact>
 </div>

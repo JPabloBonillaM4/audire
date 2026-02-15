@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-Nosotros section
+<about-us-section></about-us-section>
 @endsection

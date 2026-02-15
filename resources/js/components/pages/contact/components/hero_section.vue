@@ -48,11 +48,7 @@
                 </h1>
 
                 <!-- Divider decorativo -->
-                <div class="flex items-center justify-center gap-3 mb-8">
-                    <div class="h-1 w-12 bg-gradient-to-r from-transparent to-primary rounded-full"></div>
-                    <div class="w-3 h-3 rounded-full bg-primary"></div>
-                    <div class="h-1 w-12 bg-gradient-to-l from-transparent to-primary rounded-full"></div>
-                </div>
+                <dividerDecorative />
 
                 <!-- Description -->
                 <p
@@ -98,29 +94,21 @@
     </section>
 </template>
 
-<script>
+<script setup>
 import { useTheme } from '../../../../composables/useTheme';
+import dividerDecorative from '@/components/general/divider-decorative.vue';
 
-export default {
-    setup() {
-        const { theme } = useTheme();
+const { theme } = useTheme();
 
-        const scrollToAtencion = () => {
-            const atencionSection = document.getElementById('atencion-section');
-            if (atencionSection) {
-                atencionSection.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        };
-
-        return {
-            theme,
-            scrollToAtencion
-        };
+const scrollToAtencion = () => {
+    const atencionSection = document.getElementById('atencion-section');
+    if (atencionSection) {
+        atencionSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
     }
-}
+};
 </script>
 
 <style scoped>

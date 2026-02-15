@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-Tips section
+<tips-section></tips-section>
 @endsection

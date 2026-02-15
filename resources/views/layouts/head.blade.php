@@ -6,6 +6,10 @@
 
         <title>{{ config('app.name', 'AUDIRE') }}</title>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{{ asset('img/logos/audire_ico2.png') }}">
+        <link rel="apple-touch-icon" href="{{ asset('img/logos/audire_ico2.png') }}">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         {{-- <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" /> --}}

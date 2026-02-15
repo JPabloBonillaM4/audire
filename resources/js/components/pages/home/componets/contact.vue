@@ -1,5 +1,5 @@
 <template>
-    <section class="py-16 sm:py-20 lg:py-28 bg-base-200 overflow-hidden">
+    <section id="contacto-form" class="py-16 sm:py-20 lg:py-28 bg-base-200 overflow-hidden">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto">
 

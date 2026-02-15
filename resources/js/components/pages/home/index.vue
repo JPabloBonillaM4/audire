@@ -48,9 +48,9 @@ onUnmounted(() => {
         <Contact />
     </div>
 </template>
-<style>
+<style scoped>
     .section-content {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .blue-grad-bg {

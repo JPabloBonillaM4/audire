@@ -1,4 +1,4 @@
 @extends('index')
 @section('content')
-Products section
+<products-section></products-section>
 @endsection
