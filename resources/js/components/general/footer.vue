@@ -112,7 +112,7 @@
                                 class="text-sm transition-colors duration-300"
                                 :class="theme === 'dark' ? 'text-gray-400' : 'text-gray-600'"
                             >
-                                contacto@audireaudiologia.com
+                                audirerecepcion@gmail.com
                             </span>
                         </li>
                         <li class="flex items-start space-x-3">

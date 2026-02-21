@@ -85,18 +85,18 @@ const locations = ref([
         address: 'Av. Lindavista 251 (2do Piso), Lindavista Norte',
         city: '07300 Ciudad de México, CDMX, México',
         phone: '55-1162-1285',
-        email: 'contacto@audireaudiologia.com',
+        email: 'audirerecepcion@gmail.com',
         coordinates: 'Av.+Lindavista+251,+Lindavista+Norte,+07300+Ciudad+de+México,+CDMX',
-        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.8!2d-99.12!3d19.48!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI4JzQ4LjAiTiA5OcKwMDcnMTIuMCJX!5e0!3m2!1ses!2smx!4v1234567890'
+        mapUrl: 'https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Av.+Lindavista+251,+Lindavista+Nte.,+Gustavo+A.+Madero,+07300+Ciudad+de+M%C3%A9xico,+CDMX&t=&z=17&ie=UTF8&iwloc=B&output=embed'
     },
     {
-        name: 'Sucursal Centro',
-        address: 'Calle Principal 123, Colonia Centro',
-        city: '06000 Ciudad de México, CDMX, México',
-        phone: '55-0000-0000',
-        email: 'centro@audireaudiologia.com',
-        coordinates: 'Zócalo,+Ciudad+de+México,+CDMX',
-        mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.6!2d-99.13!3d19.43!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzQ4LjAiTiA5OcKwMDcnNDguMCJX!5e0!3m2!1ses!2smx!4v1234567890'
+        name: 'Sucursal Zacatenco',
+        address: 'Calz. Ticoman 221, Local 3, Col. Residencial Zacatenco',
+        city: '07369 Alcaldía Gustavo A. Madero, Ciudad de México, CDMX',
+        phone: '55-1162-1285',
+        email: 'audirerecepcion@gmail.com',
+        coordinates: 'Calz.+Ticoman+221,+Residencial+Zacatenco,+07369+Ciudad+de+México,+CDMX',
+        mapUrl: 'https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Calz.+Ticoman+221,+Residencial+Zacatenco,+Gustavo+A.+Madero,+07369+Ciudad+de+M%C3%A9xico,+CDMX&t=&z=17&ie=UTF8&iwloc=B&output=embed'
     }
 ]);
 

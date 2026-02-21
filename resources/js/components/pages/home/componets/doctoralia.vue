@@ -15,8 +15,8 @@
 
                 <!-- Main Content -->
                 <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                    <!-- Left Side - Info -->
-                    <div ref="featuresRef" class="space-y-6">
+                    <!-- Left Side - Info (order-2 en mobile, order-1 en lg) -->
+                    <div ref="featuresRef" class="space-y-6 order-2 lg:order-1">
                         <div v-for="(feature, index) in features" :key="index" class="flex items-start space-x-4 transition-all duration-700 ease-out" :class="{ 'opacity-0 -translate-x-10': !isFeaturesVisible, 'opacity-100 translate-x-0': isFeaturesVisible }" :style="{ transitionDelay: `${index * 150}ms` }">
                             <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" :class="feature.bgColor">
                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -30,8 +30,8 @@
                         </div>
                     </div>
 
-                    <!-- Right Side - CTA Card -->
-                    <div ref="ctaRef" class="relative transition-all duration-700 ease-out overflow-hidden" :class="{ 'opacity-0 translate-x-10': !isCtaVisible, 'opacity-100 translate-x-0': isCtaVisible }">
+                    <!-- Right Side - CTA Card (order-1 en mobile, order-2 en lg) -->
+                    <div ref="ctaRef" class="relative transition-all duration-700 ease-out order-1 lg:order-2" :class="{ 'opacity-0 translate-x-10': !isCtaVisible, 'opacity-100 translate-x-0': isCtaVisible }">
                         <div class="bg-base-100 rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-10 border-t-4 border-primary">
                             <!-- Doctoralia Logo Placeholder -->
                             <div class="flex items-center justify-center mb-6">
@@ -103,7 +103,7 @@ const features = ref([
     },
     {
         title: 'Especialistas Certificados',
-        description: 'Equipo de audiólogos y otorrinolaringólogos con amplia experiencia en salud auditiva.',
+        description: 'Equipo de audiólogos y otoneurologos con amplia experiencia en salud auditiva.',
         icon: 'M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z',
         bgColor: 'bg-secondary'
     },

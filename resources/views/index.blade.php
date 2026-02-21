@@ -19,6 +19,9 @@
         <h1>Audire Audiología</h1>
         <p>Para una mejor experiencia, por favor habilita JavaScript en tu navegador.</p>
         <p>Somos especialistas en salud auditiva: audiometrías, auxiliares auditivos, tamiz neonatal y más.</p>
+        <p>Teléfono: <a href="tel:+525511621285">55 1162 1285</a></p>
+        <p>Sucursal Lindavista: Av. Lindavista 251, 2do Piso, Lindavista Norte, CP 07300, CDMX</p>
+        <p>Sucursal Zacatenco: Calz. Ticoman 221, Local 3, Col. Residencial Zacatenco, CP 07369, CDMX</p>
         <nav>
             <a href="/">Inicio</a> |
             <a href="/nosotros">Nosotros</a> |

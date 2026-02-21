@@ -97,7 +97,7 @@
                                     </div>
                                     <div>
                                         <p class="text-white/60 text-sm">Email</p>
-                                        <p class="font-semibold">contacto@audireaudiologia.com</p>
+                                        <p class="font-semibold">audirerecepcion@gmail.com</p>
                                     </div>
                                 </div>
                             </div>

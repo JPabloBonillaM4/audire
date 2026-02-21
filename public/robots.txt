@@ -3,5 +3,11 @@ Allow: /
 Disallow: /vendor/
 Disallow: /storage/
 Disallow: /bootstrap/
+Disallow: /build/
+Disallow: /*.json$
+Disallow: /hot
+
+# Crawl-delay (optional, be friendly with server resources)
+Crawl-delay: 1
 
 Sitemap: https://audireaudiologia.com/sitemap.xml
