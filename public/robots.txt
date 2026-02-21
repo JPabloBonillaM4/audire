@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /bootstrap/
+
+Sitemap: https://audireaudiologia.com/sitemap.xml

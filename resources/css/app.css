@@ -21,6 +21,20 @@
         overflow-x: hidden;
         max-width: 100vw;
     }
+
+    /* SEO: Content visible to crawlers but hidden visually.
+       Uses sr-only pattern so screen readers and bots can read it. */
+    .seo-content {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
     
     [data-theme="light"] {
         --color-primary: #00B3A4 !important;  /* Pantone 3262 C */
