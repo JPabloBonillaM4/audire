@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr" data-theme="light">
+<html lang="es-MX" dir="ltr" data-theme="light">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,7 +58,7 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
 
         {{-- DNS Prefetch for external resources --}}
-        {{-- <link rel="dns-prefetch" href="https://fonts.bunny.net"> --}}
+        <link rel="dns-prefetch" href="https://fonts.bunny.net">
 
         {{-- Preload critical assets --}}
         <link rel="preload" as="image" href="{{ asset('img/logos/audire_ico2.png') }}">
