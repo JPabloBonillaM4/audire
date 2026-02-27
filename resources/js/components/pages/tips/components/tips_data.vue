@@ -189,70 +189,70 @@ const tips = ref([
     {
         id: 1,
         title: 'Usar protectores auditivos en caso de exposición continua al ruido',
-        date: 'Nov. 03 2018',
+        date: 'Ene. 15 2025',
         description: 'Existen ciertos entornos laborales que exponen a los trabajadores a intensidades muy altas de ruido durante un tiempo prolongado por lo que es fundamental incidir en el uso de protectores.',
         image: 'img/tips/protection.jpeg'
     },
     {
         id: 2,
         title: 'Cuidados ante el ruido',
-        date: 'Nov. 03 2018',
+        date: 'Mar. 22 2025',
         description: 'Se recomienda evitar los ruidos impulsivos (petardos, disparo…), alejarse de las fuentes de ruido, disminuir el ruido que generamos y reducir el tiempo de exposición a sonidos de alta intensidad. Oír música a más de 110 decibelios puede provocar pérdida auditiva precoz. Si se tienen en cuenta los criterios establecidos por la directiva europea, lo permitido en función del tiempo y volumen sería: escuchar un reproductor musical a 95 dB durante 15 minutos al día y los sonidos de una discoteca a 104 dB durante dos minutos por noche. Se deberá limitar el tiempo de exposición a reproductores de música personales (incluidos los teléfonos móviles) a 40 horas semanales si el nivel de presión es de 80 db y a 5 horas semanales en caso de 89 db.',
         image: 'img/tips/sound.jpeg'
     },
     {
         id: 3,
         title: 'Acudir al especialista',
-        date: 'Nov. 03 2018',
+        date: 'Jun. 08 2025',
         description: 'recomiendan consultar en caso de inflamación, dolor, taponamiento, zumbidos, secreción de oído, ya que pueden derivar en problemas de la audición. Por otra parte, es recomendable consultar en cuanto se note pérdida auditiva, aunque mínima. Algunos signos pueden ser la dificultad de seguir una conversación o la necesidad de subir el volumen de la televisión. Éstos pueden ser tratados y, en algunos casos, se puede prevenir su progresión.',
         image: 'img/tips/doctor.jpeg'
     },
     {
         id: 4,
         title: 'Revisiones periódicas',
-        date: 'Nov. 03 2018',
+        date: 'Sep. 17 2025',
         description: 'Es recomendable acudir a revisión de manera periódica, al menos una vez al año, si existen factores de riesgo (antecentes familiares, exposición a ambiente ruidoso…) y a partir de los 50 años, para realizar una prueba de audición.',
         image: 'img/tips/calendar.jpeg'
     },
     {
         id: 5,
         title: 'No introducir objetos o sustancias extrañas',
-        date: 'Nov. 03 2018',
+        date: 'Feb. 11 2025',
         description: 'se deben utilizar sólo productos indicados para el oído y siempre bajo consejo médico por lo que hay que evitar el uso de aceites, soluciones salinas, gotas, agua oxigenada, bastoncillos u otros objetos, ya que éstos últimos, pueden empujar la cera hacia adentro y dañar el tímpano.',
         image: 'img/tips/object.jpeg'
     },
     {
         id: 6,
         title: 'Recomendaciones para limpieza de oído',
-        date: 'Nov. 03 2018',
+        date: 'Ago. 30 2025',
         description: 'los expertos aconsejan limpiar solo la parte más externa del oído con una toalla o gasa. Nunca introducir objetos extraños ni los dedos para su limpieza ni rascado. Si se necesita una limpieza frecuente se aconseja que sea realizada por un especialista.',
         image: 'img/tips/ear.jpg'
     },
     {
         id: 7,
         title: 'No automedicarse',
-        date: 'Nov. 03 2018',
+        date: 'Abr. 25 2025',
         description: 'Es importante saber que el uso indiscriminado de medicamentos tanto de uso tópico como por vía oral puede ser perjudicial para los oídos, como es el caso de los antibióticos, ya que pueden generar resistencias.',
         image: 'img/tips/medicine.jpeg'
     },
     {
         id: 8,
         title: 'Recomendaciones durante el baño',
-        date: 'Nov. 03 2018',
+        date: 'Jul. 19 2025',
         description: 'El agua de baños públicos, ya sea de mar, pantanos o piscinas, puede estar contaminada, es por ello que es importante para prevenir infecciones cumplir unas normas de higiene y limpieza básicas antes y durante el baño (ducha y el uso de aseos). Será el especialista, valorando cada caso de forma individual, el que recomiende el uso o el no uso de tapones durante el baño.',
         image: 'img/tips/shower.jpeg'
     },
     {
         id: 9,
         title: 'Evitar los golpes',
-        date: 'Nov. 03 2018',
+        date: 'Oct. 05 2025',
         description: 'Hay que prestar especial cuidado a los deportes de contacto que pueden provocar traumatismos en la zona del oído y ocasionar problemas. En caso de golpe o traumatismo directo en la zona del oído se recomienda consultar al especialista.',
         image: 'img/tips/playing.jpeg'
     },
     {
         id: 10,
         title: 'Tratar de manera adecuada las otitis en los niños',
-        date: 'Nov. 03 2018',
+        date: 'Dic. 14 2025',
         description: 'En caso de sospecha de pérdida auditiva en un niño por parte de padres y profesores se recomienda acudir al especialista, ya que aun en ausencia de dolor, fiebre o secreción, puede existir una otitis recurrente, que de no ser bien tratada puede hacerse crónico y derivar en hipoacusia.',
         image: 'img/tips/ear2.jpeg'
     }
