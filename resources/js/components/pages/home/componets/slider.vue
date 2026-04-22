@@ -72,7 +72,7 @@ onUnmounted(() => {
         >
             <!-- Content Container -->
             <div class="relative w-full h-full flex items-center py-6 md:py-8 lg:py-0">
-                <div class="container mx-auto px-4 md:px-6 lg:px-12 xl:px-16">
+                <div class="container mx-auto px-4 md:px-6 lg:pl-24 lg:pr-12 xl:pl-28 xl:pr-16 2xl:pl-32">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 md:gap-6 lg:gap-10 xl:gap-12 items-center">
                         <!-- Left Content -->
                         <div class="z-20 order-2 lg:order-1">
