@@ -56,9 +56,19 @@
 
         {{-- Fonts --}}
         <link rel="preconnect" href="https://fonts.bunny.net">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         {{-- DNS Prefetch for external resources --}}
         <link rel="dns-prefetch" href="https://fonts.bunny.net">
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+        <link rel="dns-prefetch" href="https://www.google.com">
+
+        {{-- Google Fonts: Raleway --}}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap">
+
+        {{-- Google reCAPTCHA v2 --}}
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         {{-- Preload critical assets --}}
         <link rel="preload" as="image" href="{{ asset('img/logos/audire_ico2.png') }}">

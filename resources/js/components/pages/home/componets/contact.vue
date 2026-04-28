@@ -106,17 +106,12 @@
                             <div class="relative mt-10 pt-8 border-t border-white/20">
                                 <p class="text-white/60 text-sm mb-4">Síguenos en redes</p>
                                 <div class="flex space-x-3">
-                                    <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300">
+                                    <a href="https://www.facebook.com/share/1ZAD63Lteq" target="_blank" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300">
                                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                                         </svg>
                                     </a>
-                                    <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300">
-                                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300">
+                                    <a href="https://www.instagram.com/audire.mx" target="_blank" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300">
                                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                         </svg>
@@ -244,6 +239,7 @@
 
                                 <!-- Submit Button -->
                                 <div class="pt-4">
+                                    <p v-if="submitError" class="text-center text-sm text-error mb-3">{{ submitError }}</p>
                                     <button
                                         type="submit"
                                         class="btn btn-lg w-full bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:shadow-primary/25 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-white border-none group"
@@ -264,34 +260,96 @@
 
                                 <!-- Privacy Note -->
                                 <p class="text-center text-sm text-base-content/50">
-                                    Al enviar este formulario, aceptas nuestra
-                                    <a href="#" class="text-primary hover:underline">política de privacidad</a>.
+                                    <!-- Al enviar este formulario, aceptas nuestra
+                                    <a href="#" class="text-primary hover:underline">política de privacidad</a>. -->
+                                    Nos tomamos tu privacidad en serio. No compartiremos tu información con terceros.
                                 </p>
                             </form>
                         </div>
 
-                        <!-- Success Message -->
-                        <Transition
-                            enter-active-class="transition-all duration-500 ease-out"
-                            enter-from-class="opacity-0 translate-y-4 scale-95"
-                            enter-to-class="opacity-100 translate-y-0 scale-100"
-                            leave-active-class="transition-all duration-300 ease-in"
-                            leave-from-class="opacity-100 translate-y-0 scale-100"
-                            leave-to-class="opacity-0 -translate-y-4 scale-95"
-                        >
-                            <div
-                                v-if="showSuccess"
-                                class="mt-6 bg-success/10 border border-success/30 rounded-2xl p-6 text-center"
+                        <!-- Success Modal -->
+                        <Teleport to="body">
+                            <Transition
+                                enter-active-class="transition-opacity duration-300 ease-out"
+                                enter-from-class="opacity-0"
+                                enter-to-class="opacity-100"
+                                leave-active-class="transition-opacity duration-200 ease-in"
+                                leave-from-class="opacity-100"
+                                leave-to-class="opacity-0"
                             >
-                                <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                    </svg>
+                                <div
+                                    v-if="showSuccess"
+                                    class="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6 bg-base-content/60 backdrop-blur-sm"
+                                    role="dialog"
+                                    aria-modal="true"
+                                    aria-labelledby="success-modal-title"
+                                    @click.self="closeSuccess"
+                                    @keydown.esc="closeSuccess"
+                                    tabindex="-1"
+                                >
+                                    <Transition
+                                        appear
+                                        enter-active-class="transition-all duration-300 ease-out"
+                                        enter-from-class="opacity-0 translate-y-4 scale-95"
+                                        enter-to-class="opacity-100 translate-y-0 scale-100"
+                                        leave-active-class="transition-all duration-200 ease-in"
+                                        leave-from-class="opacity-100 translate-y-0 scale-100"
+                                        leave-to-class="opacity-0 translate-y-4 scale-95"
+                                    >
+                                        <div
+                                            v-if="showSuccess"
+                                            class="relative w-full max-w-md bg-base-100 rounded-3xl shadow-2xl overflow-hidden ring-1 ring-base-300/40"
+                                        >
+                                            <!-- Close button -->
+                                            <button
+                                                type="button"
+                                                class="absolute top-3 right-3 sm:top-4 sm:right-4 w-9 h-9 rounded-full flex items-center justify-center text-base-content/60 hover:text-base-content hover:bg-base-200 transition-colors duration-200 z-10"
+                                                aria-label="Cerrar"
+                                                @click="closeSuccess"
+                                            >
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                                </svg>
+                                            </button>
+
+                                            <!-- Decorative top gradient -->
+                                            <div class="h-2 bg-gradient-to-r from-primary via-secondary to-primary"></div>
+
+                                            <div class="px-6 sm:px-8 pt-8 pb-6 sm:pb-8 text-center">
+                                                <!-- Icon -->
+                                                <div class="relative mx-auto w-20 h-20 sm:w-24 sm:h-24 mb-5">
+                                                    <div class="absolute inset-0 bg-success/20 rounded-full animate-ping-slow"></div>
+                                                    <div class="relative w-full h-full bg-gradient-to-br from-success to-success/80 rounded-full flex items-center justify-center shadow-lg shadow-success/30">
+                                                        <svg class="w-10 h-10 sm:w-12 sm:h-12 text-success-content" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Title -->
+                                                <h3 id="success-modal-title" class="text-2xl sm:text-3xl font-bold text-base-content mb-3">
+                                                    ¡Mensaje enviado!
+                                                </h3>
+
+                                                <!-- Message -->
+                                                <p class="text-base-content/70 text-sm sm:text-base leading-relaxed mb-6">
+                                                    Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos lo antes posible.
+                                                </p>
+
+                                                <!-- CTA -->
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-lg w-full bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:shadow-primary/25 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-white border-none"
+                                                    @click="closeSuccess"
+                                                >
+                                                    Entendido
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </Transition>
                                 </div>
-                                <h4 class="text-lg font-semibold text-base-content mb-2">¡Mensaje enviado!</h4>
-                                <p class="text-base-content/70">Gracias por contactarnos. Te responderemos pronto.</p>
-                            </div>
-                        </Transition>
+                            </Transition>
+                        </Teleport>
                     </div>
                 </div>
             </div>
@@ -300,7 +358,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, onUnmounted } from 'vue';
+import { ref, reactive, onMounted, onUnmounted, watch } from 'vue';
 
 // Form data
 const form = reactive({
@@ -320,6 +378,23 @@ const errors = reactive({
 
 const isSubmitting = ref(false);
 const showSuccess = ref(false);
+const submitError = ref('');
+
+let successTimeoutId = null;
+
+const closeSuccess = () => {
+    showSuccess.value = false;
+    if (successTimeoutId) {
+        clearTimeout(successTimeoutId);
+        successTimeoutId = null;
+    }
+};
+
+// Lock body scroll when modal is open
+watch(showSuccess, (isOpen) => {
+    if (typeof document === 'undefined') return;
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+});
 
 // Animation refs
 const headerRef = ref(null);
@@ -377,23 +452,51 @@ const handleSubmit = async () => {
     if (!validateForm()) return;
 
     isSubmitting.value = true;
+    submitError.value = '';
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+        const baseUrl = window.Laravel?.baseUrl ?? '';
+        const csrfToken = window.Laravel?.csrfToken ?? '';
 
-    isSubmitting.value = false;
-    showSuccess.value = true;
+        await window.axios.post(`${baseUrl}/contacto/enviar`, {
+            name: form.name,
+            email: form.email,
+            subject: form.subject,
+            message: form.message,
+        }, {
+            headers: {
+                'X-CSRF-TOKEN': csrfToken,
+                'Accept': 'application/json',
+            },
+        });
 
-    // Reset form
-    form.name = '';
-    form.email = '';
-    form.subject = '';
-    form.message = '';
+        showSuccess.value = true;
 
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-        showSuccess.value = false;
-    }, 5000);
+        // Reset form
+        form.name = '';
+        form.email = '';
+        form.subject = '';
+        form.message = '';
+
+        // Auto-hide after 6 seconds
+        if (successTimeoutId) clearTimeout(successTimeoutId);
+        successTimeoutId = setTimeout(() => {
+            showSuccess.value = false;
+            successTimeoutId = null;
+        }, 6000);
+    } catch (error) {
+        if (error.response?.status === 422 && error.response.data?.errors) {
+            const apiErrors = error.response.data.errors;
+            errors.name = apiErrors.name?.[0] ?? '';
+            errors.email = apiErrors.email?.[0] ?? '';
+            errors.subject = apiErrors.subject?.[0] ?? '';
+            errors.message = apiErrors.message?.[0] ?? '';
+        } else {
+            submitError.value = 'Hubo un problema al enviar el mensaje. Inténtalo nuevamente.';
+        }
+    } finally {
+        isSubmitting.value = false;
+    }
 };
 
 // Intersection Observer setup
@@ -431,6 +534,12 @@ onUnmounted(() => {
     if (observer) {
         observer.disconnect();
     }
+    if (successTimeoutId) {
+        clearTimeout(successTimeoutId);
+    }
+    if (typeof document !== 'undefined') {
+        document.body.style.overflow = '';
+    }
 });
 </script>
 
@@ -462,5 +571,21 @@ onUnmounted(() => {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+/* Slow ping animation for success icon halo */
+@keyframes ping-slow {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    75%, 100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+.animate-ping-slow {
+    animation: ping-slow 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 </style>

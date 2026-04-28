@@ -115,4 +115,16 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Contact Form Recipient
+    |--------------------------------------------------------------------------
+    |
+    | Email address that receives the messages submitted from the public
+    | contact form.
+    |
+    */
+
+    'contact_recipient' => env('CONTACT_TO_EMAIL', 'contacto@audireaudiologia.com'),
+
 ];

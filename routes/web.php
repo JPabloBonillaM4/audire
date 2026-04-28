@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeneralController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [GeneralController::class, 'home'])->name('home');
 Route::get('/nosotros', [GeneralController::class, 'aboutUs'])->name('about-us');
@@ -9,6 +10,7 @@ Route::get('/servicios', [GeneralController::class, 'services'])->name('services
 Route::get('/productos', [GeneralController::class, 'products'])->name('products');
 Route::get('/tips', [GeneralController::class, 'tips'])->name('tips');
 Route::get('/contacto', [GeneralController::class, 'contact'])->name('contact');
+Route::post('/contacto/enviar', [ContactController::class, 'send'])->name('contact.send');
 
 // Sitemap XML
 Route::get('/sitemap.xml', function () {
