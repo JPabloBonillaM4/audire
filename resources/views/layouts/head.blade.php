@@ -98,22 +98,12 @@
                     'name' => 'Ciudad de México',
                 ],
                 'address' => [
-                    [
-                        '@type' => 'PostalAddress',
-                        'streetAddress' => 'Av. Lindavista 251, 2do Piso',
-                        'addressLocality' => 'Ciudad de México',
-                        'addressRegion' => 'CDMX',
-                        'postalCode' => '07300',
-                        'addressCountry' => 'MX',
-                    ],
-                    [
-                        '@type' => 'PostalAddress',
-                        'streetAddress' => 'Calz. Ticoman 221, Local 3, Col. Residencial Zacatenco',
-                        'addressLocality' => 'Ciudad de México',
-                        'addressRegion' => 'CDMX',
-                        'postalCode' => '07369',
-                        'addressCountry' => 'MX',
-                    ],
+                    '@type' => 'PostalAddress',
+                    'streetAddress' => 'Av. Lindavista 251, 2do Piso',
+                    'addressLocality' => 'Ciudad de México',
+                    'addressRegion' => 'CDMX',
+                    'postalCode' => '07300',
+                    'addressCountry' => 'MX',
                 ],
                 'geo' => [
                     '@type' => 'GeoCoordinates',

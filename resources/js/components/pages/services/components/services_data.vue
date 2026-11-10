@@ -336,14 +336,6 @@ const services = ref([
         ],
         image: '/img/logos/logo_audire.png',
         iconColor: 'primary'
-    },
-    {
-        id: 14,
-        title: 'Clinica de acúfeno',
-        subtitle: 'Contamos con una clínica de acúfeno y otras percepciones auditivas anómalas.',
-        description: null,
-        image: '/img/clinica/acufeno.png',
-        iconColor: 'primary'
     }
 ]);
 

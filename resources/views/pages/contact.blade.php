@@ -13,10 +13,6 @@
         <h2>Sucursal Lindavista</h2>
         <address>Av. Lindavista 251, 2do Piso, Lindavista Norte, CP 07300, Ciudad de México, CDMX, México</address>
     </section>
-    <section>
-        <h2>Sucursal Zacatenco</h2>
-        <address>Calz. Ticoman 221, Local 3, Col. Residencial Zacatenco, CP 07369, Alcaldía Gustavo A. Madero, Ciudad de México</address>
-    </section>
     <nav aria-label="Enlaces relacionados">
         <a href="{{ route('services') }}">Conoce nuestros servicios</a>
         <a href="{{ route('products') }}">Productos auditivos</a>

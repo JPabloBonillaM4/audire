@@ -22,7 +22,7 @@
     </section>
     <section>
         <h2>Ubicación y Contacto</h2>
-        <p>Visítanos en Av. Lindavista 251, 2do Piso, Lindavista Norte, 07300, Ciudad de México o en Calz. Ticoman 221, Local 3, Col. Residencial Zacatenco, 07369.</p>
+        <p>Visítanos en Av. Lindavista 251, 2do Piso, Lindavista Norte, 07300, Ciudad de México.</p>
         <p>Teléfono: <a href="tel:+525511621285">55 1162 1285</a></p>
     </section>
     <nav aria-label="Navegación principal">

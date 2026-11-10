@@ -8,14 +8,14 @@
                     class="text-3xl sm:text-4xl lg:text-5xl font-bold text-base-content mb-4 transition-all duration-700 ease-out"
                     :class="{ 'opacity-0 -translate-y-10': !isTitleVisible, 'opacity-100 translate-y-0': isTitleVisible }"
                 >
-                    Nuestras <span class="text-primary">Ubicaciones</span>
+                    Nuestra <span class="text-primary">Ubicación</span>
                 </h2>
                 <p 
                     ref="subtitleRef"
                     class="text-base sm:text-lg text-base-content/70 leading-relaxed transition-all duration-700 ease-out"
                     :class="{ 'opacity-0 translate-y-5': !isSubtitleVisible, 'opacity-100 translate-y-0': isSubtitleVisible }"
                 >
-                    Visítanos en cualquiera de nuestras sucursales
+                    Visítanos en nuestra sucursal
                 </p>
             </div>
 
@@ -88,15 +88,6 @@ const locations = ref([
         email: 'audirerecepcion@gmail.com',
         coordinates: 'Av.+Lindavista+251,+Lindavista+Norte,+07300+Ciudad+de+México,+CDMX',
         mapUrl: 'https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Av.+Lindavista+251,+Lindavista+Nte.,+Gustavo+A.+Madero,+07300+Ciudad+de+M%C3%A9xico,+CDMX&t=&z=17&ie=UTF8&iwloc=B&output=embed'
-    },
-    {
-        name: 'Sucursal Zacatenco',
-        address: 'Calz. Ticoman 221, Local 3, Col. Residencial Zacatenco',
-        city: '07369 Alcaldía Gustavo A. Madero, Ciudad de México, CDMX',
-        phone: '55-1162-1285',
-        email: 'audirerecepcion@gmail.com',
-        coordinates: 'Calz.+Ticoman+221,+Residencial+Zacatenco,+07369+Ciudad+de+México,+CDMX',
-        mapUrl: 'https://maps.google.com/maps?width=100%25&height=600&hl=es&q=Calz.+Ticoman+221,+Residencial+Zacatenco,+Gustavo+A.+Madero,+07369+Ciudad+de+M%C3%A9xico,+CDMX&t=&z=17&ie=UTF8&iwloc=B&output=embed'
     }
 ]);
 
